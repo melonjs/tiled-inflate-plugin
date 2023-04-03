@@ -1,0 +1,67 @@
+{
+  "name": "@melonjs/tiled-inflate-plugin",
+  "version": "1.0.0",
+  "description": "a melonJS plugin to enable loading and parsing of compressed Tiled maps",
+  "type": "module",
+  "keywords": [
+    "2D",
+    "HTML5",
+    "javascript",
+    "TypeScript",
+    "es6",
+    "melonjs",
+    "Tiled",
+    "plugin",
+    "gzip",
+    "zlib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melonjs/tiled-inflate-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/melonjs/tiled-inflate-plugin/issues"
+  },
+  "license": "MIT",
+  "author": "Olivier Biot (AltByte Pte Ltd)",
+  "funding": "https://github.com/sponsors/melonjs",
+  "engines": {
+    "node": ">= 19"
+  },
+  "main": "dist/tiled-inflate-plugin.js",
+  "module": "dist/tiled-inflate-plugin.js",
+  "sideEffects": false,
+  "files": [
+    "dist/tiled-inflate-plugin.js",
+    "src/",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "melonjs": "^15.0.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.21.3",
+    "@babel/plugin-syntax-import-assertions": "^7.20.0",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-replace": "^5.0.2",
+    "del-cli": "^5.0.0",
+    "eslint": "^8.36.0",
+    "eslint-plugin-jsdoc": "^40.0.3",
+    "rollup": "^3.19.1",
+    "rollup-plugin-bundle-size": "^1.0.3"
+  },
+  "scripts": {
+    "build": "npm run lint && rollup -c --silent",
+    "lint": "eslint src/**.js rollup.config.mjs",
+    "prepublishOnly": "npm run build",
+    "clean": "del-cli --force dist"
+  },
+  "dependencies": {
+    "js-base64": "^3.7.5",
+    "pako": "^2.1.0"
+  },
+  "homepage": "https://github.com/melonjs/tiled-inflate-plugin#readme"
+}
