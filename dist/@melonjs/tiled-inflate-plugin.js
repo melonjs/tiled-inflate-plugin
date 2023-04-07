@@ -1,6 +1,6 @@
 /*!
  * a melonJS plugin to enable loading and parsing of compressed Tiled maps
- * @melonjs/tiled-inflate-plugin - v1.0.0
+ * @melonjs/tiled-inflate-plugin - v1.0.1
  * @melonjs/tiled-inflate-plugin is licensed under the MIT License.
  * http://www.opensource.org/licenses/mit-license
  * @copyright (C) 2011 - 2023 Olivier Biot (AltByte Pte Ltd)
