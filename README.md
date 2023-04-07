@@ -16,7 +16,7 @@ import { plugin } from 'melonjs';
 import { TiledInflatePlugin } from '@melonjs/tiled-inflate-plugin';
 
 // register the plugin
-plugin.register(TiledInflatePlugin, "TiledInflatePlugin");
+plugin.register(TiledInflatePlugin);
 ```
 
 Once successfully registered, compressed maps will automatically be loaded and parsed by melonJS, no further actions are required.
