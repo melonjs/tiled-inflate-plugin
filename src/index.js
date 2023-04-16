@@ -22,7 +22,7 @@ export class TiledInflatePlugin extends plugin.Base {
          * @returns {Uint32Array} decoded and decompressed data
          */
         utils.inflateb64 = (data, format) => {
-            if (format === "gizp" || format === "zlib") {
+            if (format === "gzip" || format === "zlib") {
                 var output = pako.inflate(Base64.toUint8Array(data));
                 return new Uint32Array(output.buffer);
             } else {
