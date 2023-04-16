@@ -3,7 +3,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/melonjs/es6-boilerplate/blob/master/LICENSE)
 
-a melonJS plugin to enable loading and parsing of compressed Tiled maps
+a melonJS plugin to enable loading and parsing of zlib and gzip compressed Tiled maps (ztstd is not currently supported)
 >Note: this plugin requires melonJS version 15.1 or higher
 
 Installation

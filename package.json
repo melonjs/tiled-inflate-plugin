@@ -1,6 +1,6 @@
 {
   "name": "@melonjs/tiled-inflate-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a melonJS plugin to enable loading and parsing of compressed Tiled maps",
   "type": "module",
   "keywords": [

@@ -1,0 +1,13 @@
+## [1.0.2] - 2023-04-16
+
+### Fixed
+- Fix gzip compressed map support (thanks @bjorn)
+
+## [1.0.1] - 2017-04-07
+  
+### Fixed
+- Fix NPM package deployment
+
+## [1.0.0] - 2017-04-07
+  
+Initial release
