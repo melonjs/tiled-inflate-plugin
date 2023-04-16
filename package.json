@@ -44,12 +44,12 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.21.3",
     "@babel/plugin-syntax-import-assertions": "^7.20.0",
-    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-commonjs": "^24.1.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
     "@rollup/plugin-replace": "^5.0.2",
     "del-cli": "^5.0.0",
-    "eslint": "^8.36.0",
-    "eslint-plugin-jsdoc": "^40.0.3",
+    "eslint": "^8.38.0",
+    "eslint-plugin-jsdoc": "^41.1.1",
     "rollup": "^3.19.1",
     "rollup-plugin-bundle-size": "^1.0.3"
   },
