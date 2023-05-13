@@ -1,6 +1,6 @@
 /*!
  * a melonJS plugin to enable loading and parsing of compressed Tiled maps
- * @melonjs/tiled-inflate-plugin - v1.0.3
+ * @melonjs/tiled-inflate-plugin - v1.1.0
  * @melonjs/tiled-inflate-plugin is licensed under the MIT License.
  * http://www.opensource.org/licenses/mit-license
  * @copyright (C) 2011 - 2023 Olivier Biot (AltByte Pte Ltd)
@@ -7159,15 +7159,15 @@ var pako = {
 /**
  * @classdesc
  * a melonJS plugin to enable loading and parsing of compressed Tiled map
- * @augments plugin.Base
+ * @augments plugin.BasePlugin
  */
-class TiledInflatePlugin extends plugin.Base {
+class TiledInflatePlugin extends plugin.BasePlugin {
     constructor() {
         // call the super constructor
         super();
 
         // minimum melonJS version expected to run this plugin
-        this.version = "15.1.0";
+        this.version = "15.2.0";
 
         /**
          * decompress and decode zlib/gzip data

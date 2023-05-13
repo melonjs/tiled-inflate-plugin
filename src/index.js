@@ -5,15 +5,15 @@ import pako from "pako";
 /**
  * @classdesc
  * a melonJS plugin to enable loading and parsing of compressed Tiled map
- * @augments plugin.Base
+ * @augments plugin.BasePlugin
  */
-export class TiledInflatePlugin extends plugin.Base {
+export class TiledInflatePlugin extends plugin.BasePlugin {
     constructor() {
         // call the super constructor
         super();
 
         // minimum melonJS version expected to run this plugin
-        this.version = "15.1.0";
+        this.version = "15.2.0";
 
         /**
          * decompress and decode zlib/gzip data
