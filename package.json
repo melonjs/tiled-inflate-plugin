@@ -1,6 +1,6 @@
 {
   "name": "@melonjs/tiled-inflate-plugin",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "a melonJS plugin to enable loading and parsing of compressed Tiled maps",
   "type": "module",
   "keywords": [
@@ -40,7 +40,7 @@
     "LICENSE"
   ],
   "peerDependencies": {
-    "melonjs": "^15.2.0"
+    "melonjs": "^15.2.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.21.8",
@@ -51,7 +51,7 @@
     "del-cli": "^5.0.0",
     "eslint": "^8.40.0",
     "eslint-plugin-jsdoc": "^44.2.3",
-    "rollup": "^3.21.6",
+    "rollup": "^3.21.7",
     "rollup-plugin-bundle-size": "^1.0.3",
     "typescript": "^5.0.4"
   },

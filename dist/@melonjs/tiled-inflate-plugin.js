@@ -1,11 +1,11 @@
 /*!
  * a melonJS plugin to enable loading and parsing of compressed Tiled maps
- * @melonjs/tiled-inflate-plugin - v1.1.0
+ * @melonjs/tiled-inflate-plugin - v1.1.1
  * @melonjs/tiled-inflate-plugin is licensed under the MIT License.
  * http://www.opensource.org/licenses/mit-license
  * @copyright (C) 2011 - 2023 Olivier Biot (AltByte Pte Ltd)
  */
-import { plugin, utils } from 'melonjs';
+import { plugin, TMXUtils } from 'melonjs';
 
 /**
  *  base64.ts
@@ -7167,7 +7167,7 @@ class TiledInflatePlugin extends plugin.BasePlugin {
         super();
 
         // minimum melonJS version expected to run this plugin
-        this.version = "15.2.0";
+        this.version = "15.2.1";
 
         /**
          * decompress and decode zlib/gzip data
@@ -7175,15 +7175,19 @@ class TiledInflatePlugin extends plugin.BasePlugin {
          * @param {string} format - compressed data format ("gzip","zlib", "zstd")
          * @returns {Uint32Array} decoded and decompressed data
          */
-        utils.inflateb64 = (data, format) => {
-            if (format === "gzip" || format === "zlib") {
-                var output = pako.inflate(gBase64.toUint8Array(data));
-                return new Uint32Array(output.buffer);
-            } else {
-                // TODO: ztsd compression (since Tiled 1.3)
-                throw new Error(format + " compressed TMX Tile Map not supported!");
+        TMXUtils.setInflateFunction((data, format) => {
+            let output;
+            switch (format) {
+                case "gzip":
+                case "zlib":
+                    output = pako.inflate(gBase64.toUint8Array(data));
+                    break;
+                case "zstd":
+                default:
+                    throw new Error(format + " compressed TMX Tile Map not supported!");
             }
-        };
+            return new Uint32Array(output.buffer);
+        });
     }
 }
 
