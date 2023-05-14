@@ -3,8 +3,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/melonjs/es6-boilerplate/blob/master/LICENSE)
 
-a melonJS plugin to enable loading and parsing of zlib and gzip compressed [Tiled](https://www.mapeditor.org) maps (ztstd is not currently supported)
->Note: this plugin requires melonJS version 15.1 or higher
+a melonJS plugin to enable loading and parsing of zlib and gzip compressed [Tiled](https://www.mapeditor.org) maps
+>zstd compressed maps are not supported, see [here](https://github.com/melonjs/tiled-inflate-plugin/issues/2) for more details
+>Note: this plugin requires melonJS version 15.2.1 or higher
 
 Installation
 -------------------------------------------------------------------------------
@@ -25,5 +26,5 @@ Questions, need help ?
 -------------------------------------------------------------------------------
 If you need technical support, you can contact us through the following channels :
 * Forums: with melonJS 2 we moved to a new discourse [forum](https://melonjs.discourse.group), but we can still also find the previous one [here](http://www.html5gamedevs.com/forum/32-melonjs/)
-* Chat: come and chat with us on [discord](https://discord.gg/aur7JMk), or [gitter](https://gitter.im/melonjs/public)
+* Chat: come and chat with us on [discord](https://discord.gg/aur7JMk)
 * we tried to keep our [wikipage](https://github.com/melonjs/melonJS/wiki) up-to-date with useful links, tutorials, and anything related melonJS.
