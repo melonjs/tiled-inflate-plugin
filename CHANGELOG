@@ -1,4 +1,7 @@
-## [1.1.1] - 2023-05-14
+## [1.1.2] - 2023-05-14
+
+### Fixed
+- fix semver rule for minimum melonJS requirement
 
 ### Fixed
 - fix compatibility with melonJS version 15.2.1 and higher
