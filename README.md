@@ -1,3 +1,7 @@
+> **⚠️ This repository is archived.** The tiled-inflate-plugin has moved to the [melonJS monorepo](https://github.com/melonjs/melonJS/tree/master/packages/tiled-inflate-plugin). Install it via `npm install @melonjs/tiled-inflate-plugin`.
+
+---
+
 # melonJS Tiled inflate plugin
 ![melonJS Logo](https://github.com/melonjs/melonJS/raw/master/media/Banner/Banner%20-%20Billboard%20-%20Original%20Logo%20-%20horizontal.png)
 
